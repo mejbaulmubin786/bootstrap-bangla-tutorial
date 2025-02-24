@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .hero {
+        background: url("./images/demo-hero-image.jpg") center/cover; /* Replace 'demo-hero-image.jpg' with your image */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      .project-card img {
+        height: 200px; /* Adjust image height */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Demo Name</a>
+        <!-- Replace 'Demo Name' with your actual name -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>A showcase of my skills and projects</p>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2>About Me</h2>
+        <p>
+          Experienced web developer specializing in front-end and back-end
+          technologies.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2>My Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="./images/demo-project1.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <!-- Replace 'demo-project1.jpg' -->
+              <div class="card-body">
+                <h5 class="card-title">Project One</h5>
+                <p class="card-text">Description of project one.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="./images/demo-project2.jpg"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <!-- Replace 'demo-project2.jpg' -->
+              <div class="card-body">
+                <h5 class="card-title">Project Two</h5>
+                <p class="card-text">Description of project two.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img
+                src="demo-project3.jpg"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <!-- Replace 'demo-project3.jpg' -->
+              <div class="card-body">
+                <h5 class="card-title">Project Three</h5>
+                <p class="card-text">Description of project three.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>Email: demo@email.com</p>
+        <!-- Replace 'demo@email.com' with your actual email -->
+        <p>Phone: +1234567890</p>
+        <!-- Replace with your phone number -->
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Demo Name. All Rights Reserved.</p>
+      <!-- Replace 'Demo Name' -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
